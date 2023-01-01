@@ -1,0 +1,463 @@
+section > .inner {
+  flex-direction: column;
+}
+
+section .section_title {
+  letter-spacing: -0.0625rem;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+}
+
+section .section_desc {
+  text-align: center;
+  color: var(--color-description-gray);
+  letter-spacing: 0;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  word-break: keep-all;
+  letter-spacing: -0.03125rem;
+}
+
+@media screen and (max-width: 390px) {
+  section .section_desc {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section .section_title {
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+  }
+
+  section .section_desc {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-top: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section .section_title {
+    font-size: 2.25rem;
+    letter-spacing: -0.0625rem;
+    line-height: 3.25rem;
+  }
+
+  section .section_desc {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -0.03125rem;
+    margin-top: 2.5rem;
+  }
+}
+
+/*
+========================================
+            Visual Area Start
+========================================
+*/
+section#visual {
+  height: 36.25rem;
+  background-image: url(../img/bg_about.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+section#visual > .inner {
+  height: 100%;
+  justify-content: left;
+  flex-direction: row;
+  align-items: center;
+}
+
+section#visual .visual_title {
+  width: 224px;
+  height: 178px;
+  background-image: url(../img/img_about_main_txt.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  section#visual {
+    height: 41.25rem;
+  }
+
+  section#visual .visual_title {
+    width: 373px;
+    height: 296px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#visual {
+    height: 50rem;
+  }
+}
+
+/*
+========================================
+            Visual Area End
+========================================
+*/
+
+/*
+========================================
+              Info Start
+========================================
+*/
+
+section#info {
+  padding: 3.75rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  section#info {
+    padding: 6.25rem 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#info {
+    padding: 8.125rem 0 7rem;
+  }
+}
+
+section#info .section_title {
+  color: var(--color-naver-green);
+  font-family: "Pretendard Variable";
+  font-size: 0.875rem;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+section#info .section_desc {
+  font-weight: 800;
+  word-break: keep-all;
+  margin-top: 1.5625rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.03125rem;
+  line-height: 2.125rem;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (max-width: 390px) {
+  section#info > .inner {
+    align-items: baseline;
+  }
+
+  section#info .section_desc {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section#info .section_title {
+    font-size: 1.1875rem;
+  }
+
+  section#info .section_desc {
+    margin-top: 1.375rem;
+    font-size: 1.875rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#info .section_title {
+    font-size: 1.5rem;
+  }
+
+  section#info .section_desc {
+    margin-top: 1.25rem;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+  }
+}
+
+/*
+========================================
+                Info End
+========================================
+*/
+
+/*
+========================================
+              Vision Start
+========================================
+*/
+
+section#vision {
+  background-image: url(../img/bg_about_graphic_01.png);
+  background-repeat: no-repeat;
+  background-size: 2200px 871px;
+  background-color: rgb(247, 250, 253);
+  background-position: 50% 0;
+  padding: 3.75rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  section#vision {
+    padding: 6.25rem 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#vision {
+    padding: 7.5rem 0;
+  }
+}
+
+section#vision .section_pic {
+  width: 100%;
+}
+
+section#vision .section_pic::after {
+  content: "";
+  display: block;
+  background-image: url(../img/img_vision_graphic_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1.6875rem -1.5rem 0;
+  height: 155px;
+  background-size: 314px 155px;
+}
+
+@media screen and (max-width: 390px) {
+  section#vision > .inner {
+    align-items: baseline;
+  }
+
+  section#vision .section_desc {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section#vision .section_pic::after {
+    background-image: url(../img/img_vision_graphic_tablet.png);
+    background-size: 603px 279px;
+    height: 279px;
+    margin-top: 2.4375rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#vision .section_pic::after {
+    background-image: url(../img/img_vision_graphic_desktop.png);
+    background-size: 704px 310px;
+    height: 310px;
+    margin-top: 3rem;
+  }
+}
+
+/*
+========================================
+              Vision End
+========================================
+*/
+
+/*
+========================================
+              History Start
+========================================
+*/
+
+section#history {
+  background-color: rgb(20, 20, 24);
+  background-image: url(../img/bg_about_graphic_02_desktop.png);
+  background-size: 2200px 772px;
+  background-position: 50% bottom;
+  padding: 3.75rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  section#history {
+    padding: 6.25rem 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#history {
+    padding-top: 7.5rem;
+    padding-bottom: 8.75rem;
+    background-position: 50% 0;
+  }
+}
+
+section#history .section_title {
+  color: white;
+}
+
+@media screen and (max-width: 390px) {
+  section#history .content_box {
+  }
+}
+
+section#history .content_box {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  section#history .content_box {
+    margin: 3rem -1.5rem 0;
+    flex-direction: row;
+    gap: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#history .content_box {
+    margin: 3.75rem -1.25rem 0;
+    gap: 2.5rem;
+  }
+}
+
+/*
+========================================
+              History End
+========================================
+*/
+
+/*
+========================================
+              Mission Start
+========================================
+*/
+
+section#mission {
+  padding: 3.75rem 0;
+}
+
+section#mission > .inner {
+  align-items: baseline;
+}
+
+section#mission .section_top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  section#mission {
+    padding: 6.25rem 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#mission {
+    padding: 7.6825rem 0 7.25rem;
+  }
+}
+
+section#mission .section_title {
+  font-family: "Pretendard Variable";
+  letter-spacing: 0;
+  font-weight: 850;
+  font-size: 1.75rem;
+}
+
+section#mission .section_desc {
+  text-align: left;
+  margin-top: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+
+section#mission .btn_link {
+  margin-top: 1.5rem;
+  width: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+  section#mission .section_title {
+    font-size: 2rem;
+  }
+
+  section#mission .section_desc {
+    line-height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#mission .section_title {
+    font-size: 2.375rem;
+  }
+
+  section#mission .section_desc {
+    margin-top: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+
+  section#mission .btn_link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+section#mission .education_list {
+  margin: 2.5rem 0 0;
+}
+
+@media screen and (min-width: 768px) {
+  section#mission .education_list {
+    margin: 2.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section#mission .education_list {
+    margin-top: 3.8125rem;
+  }
+}
+
+section#mission .education_list .edu_card {
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 0.5rem;
+}
+
+section#mission .education_list .edu_card .edu_title {
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: rgb(132, 132, 132);
+}
+
+section#mission .education_list .edu_card .edu_text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.03125rem;
+  word-break: keep-all;
+}
+
+section#mission .education_list .edu_card .edu_desc {
+  font-size: 0.875rem;
+  color: rgb(132, 132, 132);
+}
+
+section#mission .education_list .edu_card .edu_links > a {
+  color: var(--color-naver-green);
+  font-size: .9375rem;
+}
+
+@media screen and (min-width: 768px) {
+  section#mission .education_list .edu_card .edu_desc {
+    font-size: 0.9375rem;
+  }
+}
+
+/*
+========================================
+              Mission End
+========================================
+*/
